@@ -16,7 +16,7 @@
   ],
   "typings": "types/index.d.ts",
   "publishConfig": {
-    "registry": "http://npm.nevint.com/repository/npm-host/"
+    "registry": "https://registry.npmjs.org/"
   },
   "workspaces": [
     "packages/*"

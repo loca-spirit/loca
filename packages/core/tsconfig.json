@@ -2,7 +2,7 @@
   "files": [
     "src/index.ts"
   ],
-  "extends": "../../../../config/tsconfig.build.json",
+  "extends": "../../config/tsconfig.build.json",
   "compilerOptions": {
     "declarationDir": "types",
     "outDir": "dist/commonjs",
