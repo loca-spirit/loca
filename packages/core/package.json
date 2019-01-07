@@ -1,0 +1,31 @@
+{
+  "name": "@iu/core",
+  "version": "0.0.0",
+  "description": "NIO Core Modules",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/umd/index.js",
+  "keywords": [
+    "nio",
+    "core"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
+  "typings": "types/index.d.ts",
+  "publishConfig": {
+    "registry": "http://npm.nevint.com/repository/npm-host/"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "sh build/build.sh",
+    "lint": "vue-cli-service lint",
+    "unit": "npm run test:unit",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "deepmerge": "^2.2.1",
+    "reflect-metadata": "^0.1.12"
+  }
+}

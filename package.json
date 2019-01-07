@@ -1,0 +1,52 @@
+{
+  "name": "iu-srcs",
+  "private": true,
+  "version": "0.0.3",
+  "description": "NIO Core Modules",
+  "main": "dist/main.common.js",
+  "module": "dist/main.umd.js",
+  "keywords": [
+    "nio",
+    "core"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
+  "typings": "types/index.d.ts",
+  "publishConfig": {
+    "registry": "http://npm.nevint.com/repository/npm-host/"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "sh build/build.sh",
+    "build:packages": "sh build/build-packages.sh",
+    "lint": "vue-cli-service lint",
+    "unit": "npm run test:unit",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.12"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.4",
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-typescript": "^3.0.5",
+    "@vue/cli-plugin-unit-jest": "^3.0.5",
+    "ajv": "^6.5.4",
+    "babel-core": "7.0.0-bridge.0",
+    "file-system": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^5.0.0-alpha.3",
+    "lerna": "^3.4.3",
+    "shelljs": "^0.8.2",
+    "ts-jest": "^23.0.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.4",
+    "vue": "^2.5.17"
+  }
+}

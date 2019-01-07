@@ -1,0 +1,27 @@
+{
+  "name": "@iu/common",
+  "version": "0.0.0",
+  "description": "NIO Core Modules",
+  "main": "dist/commonjs/index.js",
+  "module": "dist/main.umd.js",
+  "keywords": [
+    "nio",
+    "common"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "types"
+  ],
+  "typings": "types/index.d.ts",
+  "publishConfig": {
+    "registry": "http://npm.nevint.com/repository/npm-host/"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "sh build/build.sh",
+    "lint": "vue-cli-service lint",
+    "unit": "npm run test:unit",
+    "test:unit": "vue-cli-service test:unit"
+  }
+}
