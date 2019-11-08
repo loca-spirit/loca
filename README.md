@@ -1,4 +1,4 @@
-# nio-core
+# loca-core
 
 ## Project setup
 ```
